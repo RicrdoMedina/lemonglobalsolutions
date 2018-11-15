@@ -1283,7 +1283,8 @@ header h6 + p {
 header.major {
   margin: 0 0 4em 0;
   position: relative;
-  text-align: center; }
+  text-align: center;
+  z-index: 10; }
   header.major:after {
     background: #AAC538;
     content: '';
@@ -1291,6 +1292,18 @@ header.major {
     height: 0.2em;
     max-width: 20em;
     width: 75%; }
+
+header.special {
+  margin: 0 0 4em 0;
+  position: relative;
+  text-align: center;
+  z-index: 10; }
+  header.special .goto-next {
+    bottom: -88px; }
+  header.special p {
+    font-size: 1.25em;
+    margin-top: -1em;
+    line-height: 1.75em; }
 
 footer.major {
   margin: 4em 0 0 0; }
@@ -2150,7 +2163,8 @@ body.landing .dropotron.level-0 {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 100; }
+  z-index: 100;
+  transition: background ease-in-out .5s; }
   #header h1 {
     height: inherit;
     left: 1.25em;
